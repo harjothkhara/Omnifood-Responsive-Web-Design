@@ -2,7 +2,6 @@ body {
   font-family: Helvetica, Arial;
   font-size: 18px;
 }
-
 h1, h2{
   color: #00960b;
   font-family: Helvetica, Arial;
@@ -13,6 +12,9 @@ h1{
 h2{
   font-size: 25px;
 }
-p{
+.main-text{
   text-align: justify;
+}
+.author-text{
+  font-size: 22px;
 }
