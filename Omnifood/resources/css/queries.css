@@ -35,7 +35,7 @@
   }
   .plan-prize { font-size: 250%;}
   .contact-form{ width: 80%;}
-
+}
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px){
   body { font-size: 16px;}
