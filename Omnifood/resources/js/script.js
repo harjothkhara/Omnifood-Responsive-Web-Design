@@ -83,15 +83,15 @@ $('a[href*="#"]')
   /* Mobile nav */
   $('.js--nav-icon').click(function(){
     var nav = $('.js--main-nav');
-    var icon = $('.js--nav-icon');
+    var icon = $('.js--nav-icon i');
 
     nav.slideToggle(200);
-    if (icon.hasClass('menu')) {
-        icon.addClass('close');
-        icon.removeClass('menu');
+    if (icon.hasClass('icon ion-md-menu')) {
+        icon.addClass('icon ion-md-close');
+        icon.removeClass('icon ion-md-menu');
     } else{
-        icon.addClass('menu');
-        icon.removeClass('close');
+        icon.addClass('icon ion-md-menu');
+        icon.removeClass('icon ion-md-close');
     }
   });
 });
