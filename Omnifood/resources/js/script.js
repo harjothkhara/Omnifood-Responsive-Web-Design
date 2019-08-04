@@ -81,17 +81,47 @@ $('a[href*="#"]')
   });
 
   /* Mobile nav */
-  $('.js--nav-icon').click(function(){
+  $('.js--nav-icon, .js--main-nav a, .logo-black').click(function(element){
     var nav = $('.js--main-nav');
     var icon = $('.js--nav-icon i');
 
-    nav.slideToggle(200);
+    //Gets the class name of the element that triggered the event
+    var clicked = element.target.className;
+
+    //Exists the function if the menu is closed AND the logo-black element (logo image) was clicked
+    if (icon.hasClass('icon ion-md-menu') && clicked == 'logo-black')
+        return;
+
+    //Opens and closes the menu
+    if ($(window).width() < 768){
+        nav.slideToggle(200);
+    }
+
+    //Changes icon states of the menu button
     if (icon.hasClass('icon ion-md-menu')) {
         icon.addClass('icon ion-md-close');
         icon.removeClass('icon ion-md-menu');
-    } else{
+    } else {
         icon.addClass('icon ion-md-menu');
         icon.removeClass('icon ion-md-close');
     }
+});
+
+
+$(window).resize(function(){
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+
+    if ($(window).width() > 767){
+        nav.css("display", "block");
+        icon.addClass('icon ion-md-close');
+        icon.removeClass('icon ion-md-menu');
+    } else {
+        nav.css("display", "none");
+        icon.addClass('icon ion-md-menu');
+        icon.removeClass('icon ion-md-close');
+    }
+
   });
+
 });
