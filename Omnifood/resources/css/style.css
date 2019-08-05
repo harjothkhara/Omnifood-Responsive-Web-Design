@@ -169,22 +169,24 @@ input[type=submit]:active{
 /* HEADER */
 /* --------------------------------------------------- */
 header{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url(img/hero.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url(img/hero-min.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero-min.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
 }
 .hero-text-box{
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%)
+          position: absolute;
+          width: 1140px;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
 }
 .logo{
   height: 100px;
@@ -371,9 +373,9 @@ header{
 /* TESTIMONIALS */
 /* --------------------------------------------------- */
 .section-testimonials{
-  background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.80))), url(img/back-customers.jpg);
-  background-image:-o-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(img/back-customers.jpg);
-  background-image:linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(img/back-customers.jpg);
+  background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.80))), url(img/back-customers-min.jpg);
+  background-image:-o-linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(img/back-customers-min.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(img/back-customers-min.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
